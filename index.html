@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @page { 
+            margin: 5cm 2cm; 
+            size:21cm 297mm; 
+        }
+
+        * {
+            font-family: monospace;
+        }
+
+        #box {
+            align-items: center;
+            background: #c0392b;
+            border: 1px solid black;
+            box-sizing: border-box;
+            color: #f1c40f;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            justify-content: space-around;
+            margin: 10vh auto;
+            text-align: center;
+            width: 500px;
+        }
+
+        @media print {
+            #box {
+                background: #ecf0f1;
+                border-width: 2mm;
+                color: #2c3e50;
+                height: 72.4mm;   
+                margin: 0 auto;
+                width: 83.2mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box"> 
+        <div>
+            <h1>A4 page</h1>
+            <small>margin: 5cm 2cm; </small>
+        </div>
+        <div>
+            <h1>box</h1>
+            <small>size:  83.2mm x 72.4mm</small>
+        </div>
+    </div>
+</body>
+</html>
